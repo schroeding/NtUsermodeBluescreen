@@ -15,4 +15,4 @@ While playing around with Windows Syscalls, I discovered that, for reasons unkno
 
 Calling NtRaiseHardError with the OptionShutdownSystem parameter then escalates to a call of KeBugCheckEx by the CSRSS, which triggers a (very bare) bluescreen with a NTSTATUS bugcheck code.
 
-Still confirmed working under Windows 10 20H2 ¯\\_(ツ)_/¯
+Still confirmed working under Windows 10 20H2 ¯\\\_(ツ)\_/¯
