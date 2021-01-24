@@ -2,7 +2,8 @@
 
 ![Image](image.png)
 
-This programme can trigger a blue screen in all versions of Windows starting from Windows Vista, including 7, 8.1 and 10.
+This application can trigger a blue screen in all versions of Windows starting from Windows Vista.
+Including Windows 7, Windows 8.1 and Windows 10.
 
 No admin elevation or special rights are required. Normal user accounts can also do this.
 
@@ -14,4 +15,4 @@ While playing around with Windows Syscalls, I discovered that, for reasons unkno
 
 Calling NtRaiseHardError with the OptionShutdownSystem parameter then escalates to a call of KeBugCheckEx by the CSRSS, which triggers a (very bare) bluescreen with a NTSTATUS bugcheck code.
 
-Still confirmed working under Windows 10 20H2 ¯\_(ツ)_/¯
+Still confirmed working under Windows 10 20H2 ¯\\_(ツ)_/¯
